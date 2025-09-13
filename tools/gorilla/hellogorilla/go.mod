@@ -1,6 +1,6 @@
 module hellogorilla
 
-go 1.22.2
+go 1.25.1
 
 require (
 	github.com/go-sql-driver/mysql v1.8.1

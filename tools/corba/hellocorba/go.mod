@@ -1,6 +1,6 @@
 module hellocorba
 
-go 1.22.2
+go 1.25.1
 
 require (
 	github.com/mitchellh/go-homedir v1.1.0

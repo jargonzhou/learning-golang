@@ -1,6 +1,6 @@
 module hellogrpc
 
-go 1.22.2
+go 1.25.1
 
 require (
 	google.golang.org/grpc v1.69.4
