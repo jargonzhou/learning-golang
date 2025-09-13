@@ -5,3 +5,4 @@
 * [containerization](./containerization/README.md)
 * [learning_go](./learning_go/README.md)
 * [cloudnative](./cloudnative/README.md)
+  * [dapr](./cloudnative/dapr/REAME.md)
