@@ -1,12 +1,8 @@
-# References
-
-# Package
-* [std.md](./std.md)
-
 # Command
 * https://go.dev/doc/cmd
+* https://pkg.go.dev/cmd
 
-| Command    | Description                                                                                                                                                                    |
+| Package    | Description                                                                                                                                                                    |
 | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | addr2line  | Addr2line is a minimal simulation of the GNU addr2line tool, just enough to support pprof.                                                                                     |
 | asm        | Asm, typically invoked as “go tool asm”, assembles the source file into an object file named for the basename of the argument source file with a .o suffix.                    |
@@ -31,12 +27,68 @@
 | trace      | Trace is a tool for viewing trace files.                                                                                                                                       |
 | vet        | Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string.                                       |
 
-## Action
+# cgo
+* https://pkg.go.dev/cmd/cgo
+
+Cgo enables the creation of Go packages that call C code.
+
+# go
+* https://pkg.go.dev/cmd/go
+
+Go is a tool for managing Go source code.
+
+## bug: start a bug report
+## build: compile packages and dependencies
+
+- Build constraints: `//go:build`
+- Build `-json` encoding
+- Build modes: `-buildmode`
+
+## clean: remove object files and cached files
+## doc: show documentation for package or symbol
+* https://pkg.go.dev/go/doc
+
+Package doc extracts source code documentation from a Go AST.
+
+See Also:
+* [Go Doc Comments](./codewalks.md#go-doc-comments)
+
+## env: print Go environment information
+
+see [cmd.ipynb](./cmd.ipynb)
+
+For more about environment variables, see 'go help environment'.
+
+## fix: update packages to use new APIs
+## fmt: gofmt (reformat) package sources
+
+
+## generate: generate Go files by processing source
+
+directive
+```go
+//go:generate
+```
+
+## get: add dependencies to current module and install them
+
+## install: compile and install packages and dependencies
+
+## list: list packages or modules
+
+## mod: module maintenance
+
+## work: workspace maintenance
+
+## run: compile and run Go program
+
+## telemetry: manage telemetry data and settings
+## test: test packages
+
+## tool: run specified go tool
+## version: print Go version
+
+## vet: report likely mistakes in packages
+
+## See Also
 * [cmd.ipynb](./cmd.ipynb)
-
-# Go Modules
-* https://go.dev/ref/mod
-
-## `go.mod`
-
-# The Go Memory Model

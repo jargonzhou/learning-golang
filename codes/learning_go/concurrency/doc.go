@@ -1,4 +1,4 @@
-// Concurrency in Go.
+// Examples of 'Learning Go': 12. Concurrency in Go
 //
 // goroutines
 // channels

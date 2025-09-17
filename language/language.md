@@ -1,18 +1,20 @@
 # Go Programming Language
+* https://github.com/golang/go
+
 # The Go Programming Language Specification
-* https://go.dev/ref/spec
+* [spec.md](./manual/spec.md)
 
 # Go User Manual
 * https://go.dev/doc
 
 ## Getting Started
 - **Installing Go**: Instructions for downloading and installing Go.
-- **Tutorial**: Getting started: A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, packages, and modules.
-- **Tutorial**: Create a module: A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
-- **Tutorial**: Getting started with multi-module workspaces: Introduces the basics of creating and using multi-module workspaces in Go. Multi-module workspaces are useful for making changes across multiple modules.
-- **Tutorial**: Developing a RESTful API with Go and Gin: Introduces the basics of writing a RESTful web service API with Go and the Gin Web Framework.
-- **Tutorial**: Getting started with generics: With generics, you can declare and use functions or types that are written to work with any of a set of types provided by calling code.
-- **Tutorial**: Getting started with fuzzing: Fuzzing can generate inputs to your tests that can catch edge cases and security issues that you may have missed.
+- **Tutorial: Getting started**: A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, packages, and modules.
+- **Tutorial: Create a module**: A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
+- **Tutorial: Getting started with multi-module workspaces**: Introduces the basics of creating and using multi-module workspaces in Go. Multi-module workspaces are useful for making changes across multiple modules.
+- **Tutorial: Developing a RESTful API with Go and Gin**: Introduces the basics of writing a RESTful web service API with Go and the Gin Web Framework.
+- **Tutorial: Getting started with generics**: With generics, you can declare and use functions or types that are written to work with any of a set of types provided by calling code.
+- **Tutorial: Getting started with fuzzing**: Fuzzing can generate inputs to your tests that can catch edge cases and security issues that you may have missed.
 - **Writing Web Applications**: Building a simple web application.
 - **How to write Go code**: This doc explains how to develop a simple set of Go packages inside a module, and it shows how to use the `go` command to build and test packages.
 - **A Tour of Go**: An interactive introduction to Go in four sections. The first section covers basic syntax and data structures; the second discusses methods and interfaces; the third is about Generics; and the fourth introduces Go's concurrency primitives. Each section concludes with a few exercises so you can practice what you've learned.
@@ -27,7 +29,7 @@
 - **Module version numbering**: A module's developer uses each part of a module's version number to signal the version’s stability and backward compatibility. For each new release, a module's release version number specifically reflects the nature of the module's changes since the preceding release.
 
 ## Using and understanding Go
-- **Effective Go**: A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.
+- **Effective Go**: A document that gives tips for writing clear, **idiomatic** Go code. A must read for any new Go programmer. It augments the tour and the language specification, both of which should be read first.
 - **Frequently Asked Questions**: Answers to common questions about Go.
 - **Editor plugins and IDEs**: A document that summarizes commonly used editor plugins and IDEs with Go support.
 - **Diagnostics**: Summarizes tools and methodologies to diagnose problems in Go programs.
@@ -41,17 +43,20 @@
 - **A Video Tour of Go**: Three things that make Go fast, fun, and productive: interfaces, reflection, and concurrency. Builds a toy web crawler to demonstrate these.
 - **Code that grows with grace**: One of Go's key design goals is code adaptability; that it should be easy to take a simple design and build upon it in a clean and natural way. In this talk Andrew Gerrand describes a simple "chat roulette" server that matches pairs of incoming TCP connections, and then use Go's concurrency mechanisms, interfaces, and standard library to extend it with a web interface and other features. While the function of the program changes dramatically, Go's flexibility preserves the original design as it grows.
 - **Go Concurrency Patterns**: Concurrency is the key to designing high performance network services. Go's concurrency primitives 
-- **Advanced Go Concurrency Patterns**: This talk expands on the _Go Concurrency Patterns_ talk to dive deeper into Go's concurrency primitives.
+- **Advanced Go Concurrency Patterns**: This talk expands on the *Go Concurrency Patterns* talk to dive deeper into Go's concurrency primitives.
 
 ## References
-* [references.md](./manual/references.md)
 
 - **Package Documentation**: The documentation for the Go standard library.
+  - [std.md](./manual/std.md)
 - **Command Documentation**: The documentation for the Go tools.
+  - [cmd.md](./manual/cmd.md)
 - **Language Specification**: The official Go Language specification.
 - **Go Modules Reference**: A detailed reference manual for Go's dependency management system.
+  - [modules.md](./manual/modules.md)
 - **go.mod file reference**: Reference for the directives included in a go.mod file.
 - **The Go Memory Model**: A document that specifies the conditions under which reads of a variable in one goroutine can be guaranteed to observe values produced by writes to the same variable in a different goroutine.
+  - [memmodel](./manual/memmodel.md)
 - **Contribution Guide**: Contributing to Go.
 - **Release History**: A summary of the changes between Go releases.
 
@@ -118,3 +123,12 @@ maintained by the Go community, includes articles about the Go language, tools, 
 
 # Internal
 * [internal.md](./internal.md)
+
+# See Also
+* [Go 1 and the Future of Go Programs](https://go.dev/doc/go1compat): Go 1 defines two things: first, **the specification of the language**; and second, **the specification of a set of core APIs, the "standard packages" of the Go library**. It is intended that programs written to the Go 1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification.
+* [Type Parameters Proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md) - 2021-08-20
+  * [Generics can make your Go code slower](https://planetscale.com/blog/generics-can-make-your-go-code-slower) - 2022-03-30
+  * [Faster sorting with Go generics](https://eli.thegreenplace.net/2022/faster-sorting-with-go-generics/) - 2022-04-02
+* [All your comparable types](https://go.dev/blog/comparable) - 2023-02-17
+* [Don’t just check errors, handle them gracefully](https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully) - 2016-04-27
+* [Communicating Sequential Processes](https://dl.acm.org/doi/pdf/10.1145/359576.359585) - 1978

@@ -1,5 +1,26 @@
 # Codewalks
 
+# Go Doc Comments
+* https://go.dev/doc/comment
+
+contents
+- packages
+- commands
+- types
+- funcs
+- consts
+- vars
+- syntax: 
+  - paragraphs: notes `// MARKER(uid)`, deprecations `// Deprecated: `
+  - headings: `// # ...`
+  - links: `// ...[RFC 7159]`, `// [RFC 7159]: https://tools.ietf.org/html/rfc7159`
+    - doc links: `[Name]`, `[Name1.Name2]`
+  - lists: `*, +, -, •`
+  - code blocks
+
+See Also
+* [Godoc: documenting Go code](https://go.dev/blog/godoc): Note, June 2022: For updated guidelines about documenting Go code, see “Go Doc Comments.”
+
 # Data Race Detector
 * https://go.dev/doc/articles/race_detector
 
