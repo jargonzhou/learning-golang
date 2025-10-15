@@ -88,6 +88,17 @@ This repository hosts the source code of the pkg.go.dev website, and `pkgsite`, 
 # term
 # text
 # time
+* https://pkg.go.dev/golang.org/x/time
+
+- `rate`: Package rate provides a rate limiter.
+
+# time/rate
+
+types
+- `type Limit float64`: Limit defines the maximum frequency of some events. Limit is represented as number of events per second. A zero Limit allows no events.
+- `Limiter struct`: A Limiter controls how frequently events are allowed to happen. It implements a "token bucket" of size b, initially full and refilled at rate r tokens per second.
+- `Reservation struct`: A Reservation holds information about events that are permitted by a Limiter to happen after a delay. A Reservation may be canceled, which may enable the Limiter to permit additional events.
+- `Sometimes struct`: Sometimes will perform an action occasionally. The `First`, Ev`ery, and In`terval fields govern the behavior of Do, which performs the action. A zero Sometimes value will perform an action exactly once.
 
 # tools
 * https://github.com/golang/tools

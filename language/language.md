@@ -42,7 +42,7 @@
 ## Talks
 - **A Video Tour of Go**: Three things that make Go fast, fun, and productive: interfaces, reflection, and concurrency. Builds a toy web crawler to demonstrate these.
 - **Code that grows with grace**: One of Go's key design goals is code adaptability; that it should be easy to take a simple design and build upon it in a clean and natural way. In this talk Andrew Gerrand describes a simple "chat roulette" server that matches pairs of incoming TCP connections, and then use Go's concurrency mechanisms, interfaces, and standard library to extend it with a web interface and other features. While the function of the program changes dramatically, Go's flexibility preserves the original design as it grows.
-- **Go Concurrency Patterns**: Concurrency is the key to designing high performance network services. Go's concurrency primitives 
+- **Go Concurrency Patterns**: Concurrency is the key to designing high performance network services. Go's concurrency primitives (goroutines and channels) provide a simple and efficient means of expressing concurrent execution. In this talk we see how tricky concurrency problems can be solved gracefully with simple Go code. 
 - **Advanced Go Concurrency Patterns**: This talk expands on the *Go Concurrency Patterns* talk to dive deeper into Go's concurrency primitives.
 
 ## References
@@ -52,6 +52,7 @@
 - **Command Documentation**: The documentation for the Go tools.
   - [cmd.md](./manual/cmd.md)
 - **Language Specification**: The official Go Language specification.
+  - [spec.md](./manual/spec.md)
 - **Go Modules Reference**: A detailed reference manual for Go's dependency management system.
   - [modules.md](./manual/modules.md)
 - **go.mod file reference**: Reference for the directives included in a go.mod file.
@@ -65,24 +66,24 @@
 
 Guided tours of Go programs.
 - **First-Class Functions in Go**
-- **Generating arbitrary text**: a Markov chain algorithm
+- **Generating arbitrary text: a Markov chain algorithm**
 - **Share Memory by Communicating**
 
 > Language
-- **JSON-RPC**: a tale of interfaces
+- **JSON-RPC: a tale of interfaces**
 - **Go's Declaration Syntax**
 - **Defer, Panic, and Recover**
-- **Go Concurrency Patterns**: Timing out, moving on
-- **Go Slices**: usage and internals
-- **A GIF decoder**: an exercise in Go interfaces
+- **Go Concurrency Patterns: Timing out, moving on**
+- **Go Slices: usage and internals**
+- **A GIF decoder: an exercise in Go interfaces**
 - **Error Handling and Go**
 
 > Packages
-- **JSON and Go**: using the json package.
-- **Gobs of data**: the design and use of the gob package..
-- **The Laws of Reflection**: the fundamentals of the reflect package.
-- **The Go image package**: the fundamentals of the image package..
-- **The Go image/draw package**: the fundamentals of the image/draw package.
+- **JSON and Go**: using the `json` package.
+- **Gobs of data**: the design and use of the `gob` package..
+- **The Laws of Reflection**: the fundamentals of the `reflect` package.
+- **The Go image package**: the fundamentals of the `image` package..
+- **The Go image/draw package**: the fundamentals of the `image/draw` package.
 
 > Modules
 - **Using Go Modules**: an introduction to using modules in a simple project.
@@ -95,7 +96,7 @@ Guided tours of Go programs.
 - **About the Go command**: why we wrote it, what it is, what it's not, and how to use it.
 - **Go Doc Comments**: writing good program documentation
 - **Debugging Go Code with GDB**
-- **Data Race Detector**: a manual for the data race detector.
+- **Data Race Detector**: a manual for the data race detector. - [codewalks.md#data-race-detector](./manual/codewalks.md#data-race-detector)
 - **A Quick Guide to Go's Assembler**: an introduction to the assembler used by Go.
 - **C? Go? Cgo!**: linking against C code with cgo..
 - **Profiling Go Programs**: tools for measuring your code's CPU and memory usage
@@ -116,6 +117,13 @@ Guided tours of Go programs.
 
 # The Go Blog
 * https://go.dev/blog/
+
+blogs
+* [Go Slices: usage and internals](https://go.dev/blog/slices-intro) - 2011-01-05
+* [Go Concurrency Patterns: Timing out, moving on](https://go.dev/blog/concurrency-timeouts) - 2010-08-23
+* [Advanced Go Concurrency Patterns](https://go.dev/blog/io2013-talk-concurrency) - 2013-05-23
+* [Go Concurrency Patterns: Pipelines and cancellation](https://go.dev/blog/pipelines) - 2014-03-13
+* [Go Concurrency Patterns: Context](https://go.dev/blog/context) - 2014-07-29
 
 # Go Wiki
 * https://go.dev/wiki/

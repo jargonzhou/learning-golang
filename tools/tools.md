@@ -25,18 +25,20 @@
 
 # Module, Package, Project
 * [delve](https://github.com/go-delve/delve): a debugger for the Go programming language.
-* [golang-standards/project-layout](https://github.com/golang-standards/project-layout): Standard Go Project Layout
 * [gomods/athens](https://github.com/gomods/athens): A Go module datastore and proxy.
 * [Go Toolchains](https://go.dev/doc/toolchain): Starting in Go 1.21, the Go distribution consists of a `go` command and a bundled Go **toolchain**, which is the standard library as well as the compiler, assembler, and other tools. The `go` command can use its bundled Go toolchain as well as other versions that it finds in the local `PATH` or downloads as needed.
 * [marwan-at-work/mod](https://github.com/marwan-at-work/mod): Command line tool to upgrade/downgrade Semantic Import Versioning in Go Modules.
 * [Wire](https://github.com/google/wire): a code generation tool that automates connecting components using dependency injection. - This repository was archived by the owner on Aug 25, 2025. It is now read-only.
+
+See Also
+* [golang-standards/project-layout](https://github.com/golang-standards/project-layout): Standard Go Project Layout
 
 # Test
 * [go-cmp](https://github.com/google/go-cmp): Package for comparing Go values in tests.
 * [GoMock](https://github.com/golang/mock): GoMock is a mocking framework for the Go programming language. - Update, June 2023: This repo and tool are no longer maintained. Please see go.uber.org/mock for a maintained fork instead.
 * [hey](https://github.com/rakyll/hey): a tiny program that sends some load to a web application.
 * [MailHog](https://github.com/mailhog/MailHog): an email testing tool for developers.
-* [testify](https://github.com/stretchr/testify): A toolkit with common assertions and mocks that plays nicely with the standard library.
+* [testify](./testify.md): A toolkit with common assertions and mocks that plays nicely with the standard library.
 * [uber-go/mock](https://github.com/uber-go/mock): This project originates from Google's golang/mock repo.
 
 # Linter, Formatter, Type Checker
@@ -55,17 +57,18 @@
 # Server
 * [alice](https://github.com/justinas/alice): Painless middleware chaining for Go.
 * [chi](https://github.com/go-chi/chi): lightweight, idiomatic and composable router for building Go HTTP services.
-* [cockroachdb/errors](cockroachdb/errors): Go errors with network portability. This library aims to be used as a drop-in replacement to `github.com/pkg/errors` and Go's standard `errors` package. It also provides network portability of error objects, in ways suitable for distributed systems with mixed-version software compatibility.
+* [cockroachdb/errors](https://github.com/cockroachdb/errors): Go errors with network portability. This library aims to be used as a drop-in replacement to `github.com/pkg/errors` and Go's standard `errors` package. It also provides network portability of error objects, in ways suitable for distributed systems with mixed-version software compatibility.
 * [containerd](https://containerd.io/): An industry-standard container runtime with an emphasis on simplicity, robustness and portability.
 * [Corba](./corba/corba.md): a library for creating powerful modern CLI applications.
 * [Echo](https://github.com/labstack/echo): High performance, extensible, minimalist Go web framework.
-* [hashicorp/go-plugin](https://github.com/hashicorp/go-plugin): a Go (golang) plugin system over RPC.
+* [errors](https://github.com/pkg/errors): Simple error handling primitives. - This repository was archived by the owner on Dec 1, 2021. It is now read-only.
 * [Gin](./gin/gin.md): a web framework written in Go.
 * [go-homedir](https://github.com/mitchellh/go-homedir): Go library for detecting and expanding the user's home directory without cgo.
 * [go-kit/kit](https://github.com/go-kit/kit): A standard library for microservices.
 * [golang.org/x](./x/golang.org_x.md): These repositories are part of the Go Project but outside the main Go tree.
 * [Gorilla](./gorilla/gorilla.md): a web toolkit for the Go programming language that provides useful, composable packages for writing HTTP-based applications.
 * [gRPC](./grpc/grpc.md): A high performance, open source universal RPC framework.
+* [hashicorp/go-plugin](https://github.com/hashicorp/go-plugin): a Go (golang) plugin system over RPC.
 * [httprouter](https://github.com/julienschmidt/httprouter): A high performance HTTP request router that scales well
 * [moby](https://github.com/moby/moby/tree/master/client): Go client for the Docker Engine API.
 * [Sanitizers](https://github.com/google/sanitizers): This project is the home for Sanitizers: AddressSanitizer, MemorySanitizer, ThreadSanitizer, LeakSanitizer, and more. The actual code resides in the LLVM repository. Here we keep extended documentation, bugfixes and some helper code.
@@ -79,7 +82,6 @@ See Also
 * [go-kit/log](https://github.com/go-kit/log): A minimal and extensible structured logger. - last release v0.2.1 2022-05-15
 * [Logrus](https://github.com/sirupsen/logrus): a structured logger for Go (golang), completely API compatible with the standard library logger.
 * [uber-go/zap](https://github.com/uber-go/zap): Blazing fast, structured, leveled logging in Go.
-
 
 # Misc
 * [Go Imagick](https://github.com/gographics/imagick): Go Imagick is a Go bind to ImageMagick's MagickWand C API. ([ImageMagick](https://imagemagick.org/) is a powerful open-source software suite for creating, editing, converting, and manipulating images in over 200 formats.)

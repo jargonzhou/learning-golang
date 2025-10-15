@@ -1,4 +1,5 @@
 // Examples of 'Learning Go': 8. Generics
+//
 // orderable_test.go: any
 // stack_test.go
 // generic_funcs_test.go

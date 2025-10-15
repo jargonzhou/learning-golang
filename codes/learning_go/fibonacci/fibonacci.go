@@ -1,3 +1,5 @@
+// Fibonacci implementations.
+// used by tests\benchmark_test.go
 package fibonacci
 
 // Slow

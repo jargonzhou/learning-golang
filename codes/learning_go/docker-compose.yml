@@ -1,0 +1,8 @@
+services:
+  httpbin:
+    image: kennethreitz/httpbin
+    restart: always
+    container_name: httpbin
+    # network_mode: host
+    ports:
+      - 81:80

@@ -1,0 +1,14 @@
+{
+  "go.testTimeout": "30s",
+  "go.testFlags": [
+    // BUG: use cmd NOT git bash. see launch.json/console.
+    // workaround: run in git bash terminal.
+    // "-race",
+    "-v"
+  ],
+  // "go.buildFlags": [
+  //   "-race"
+  // ],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "go.terminal.activateEnvironment": true,
+}

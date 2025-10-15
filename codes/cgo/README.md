@@ -2,6 +2,11 @@
 
 Examples of 'Learning Go': 16. Here Be Dragons: Reflect, Unsafe, and Cgo
 
+
+Windows use [MSYS2] MINGW64 environment to install [mingw-w64-gcc](https://packages.msys2.org/base/mingw-w64-gcc), add `$MSYS2_HOME/mingw64/bin` to `PATH`.
+
+or
+
 Run with Windows WSL Unbuntu 22.04.
 ```shell
 ✗ lsb_release -a

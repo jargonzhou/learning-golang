@@ -55,9 +55,10 @@ See Also:
 
 ## env: print Go environment information
 
-see [cmd.ipynb](./cmd.ipynb)
-
 For more about environment variables, see 'go help environment'.
+
+See Also
+* [cmd.ipynb](./cmd.ipynb)
 
 ## fix: update packages to use new APIs
 ## fmt: gofmt (reformat) package sources
